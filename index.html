@@ -1,120 +1,112 @@
----
-layout: templates-f6-xy-grid
-name: Foundation For Sites
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Carlos Aguirre</title>
 
-    <!-- Start Top Bar -->
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text">Yeti Agency</li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- End Top Bar -->
-    <div class="callout large primary">
-      <div class="text-center">
-        <h1>Our Blog</h1>
-      </div>
-    </div>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<article class="grid-container">
-    <div class="grid-x grid-margin-x" id="content">
-      <div class="medium-9 cell">
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2016</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
+    <!-- My Files -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="/static/js/main.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top nav -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <span class="menu-collapsed">Carlos Aguirre</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/add">Add Paper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/addtag">Add Tag</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Export</a>
+                </li>
             </ul>
-          </div>
         </div>
+    </nav>
+    <!-- Top nav END -->
+    <div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded col-2">
+        <div class="my-sidebar sticky-top sticky-offset">
+            <div>
+                PhD student at Johns Hopkins University
+            </div>
+            <ul class="list-group sticky-top sticky-offset">
+                <li class="my-sidebar-firstitem align-items-center menu-collapsed">
+                    Salvadoreño
+                </li>
+                <li class="my-sidebar-item align-items-center menu-collapsed">
+                    KDD Alumni
+                </li>
+                <li class="my-sidebar-item align-items-center menu-collapsed">
+                    Kansas State University Alumni <i class="fa fa-linkedin-square"></i>
+                </li>
 
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2016</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
             </ul>
-          </div>
         </div>
-
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2016</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2016</small></h3>
-          <img class="thumbnail" src="https://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="medium-3 cell" data-sticky-container>
-        <div class="sticky" data-sticky data-anchor="content">
-          <h4>Categories</h4>
-          <ul>
-            <li><a href="#">Skyler</a></li>
-            <li><a href="#">Jesse</a></li>
-            <li><a href="#">Mike</a></li>
-            <li><a href="#">Holly</a></li>
-          </ul>
-
-          <h4>Authors</h4>
-          <ul>
-            <li><a href="#">Skyler</a></li>
-            <li><a href="#">Jesse</a></li>
-            <li><a href="#">Mike</a></li>
-            <li><a href="#">Holly</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
-    <div class="grid-x cell">
-      <ul class="pagination" role="navigation" aria-label="Pagination">
-        <li class="disabled">Previous</li>
-        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-        <li><a href="#" aria-label="Page 2">2</a></li>
-        <li><a href="#" aria-label="Page 3">3</a></li>
-        <li><a href="#" aria-label="Page 4">4</a></li>
-        <li class="ellipsis"></li>
-        <li><a href="#" aria-label="Page 12">12</a></li>
-        <li><a href="#" aria-label="Page 13">13</a></li>
-        <li><a href="#" aria-label="Next page">Next</a></li>
-      </ul>
+    <!-- MAIN -->
+    <div class="col py-3">
+
+        {% if papers %}
+            {% for paper in papers %}
+                {% if loop.index == 0 %}
+                    <div class="paper first-paper">
+                        <div class="row title-tag-row">
+                            <div class="col-sm-8">
+                                <p>{{ paper.title }}</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>{{ paper.tags }}</p>
+                            </div>
+                        </div>
+                        <div class="row author-row">
+
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="paper">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <p>{{ paper.title }}</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>{{ paper.tags }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
     </div>
-</article>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    <!-- Main Col END -->
+
+</div>
+
+</body>
 </html>
