@@ -11,6 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <!-- SideNav -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
     <!-- My Files -->
     <link rel="stylesheet" href="/static/css/main.css">
     <script src="/static/js/main.js"></script>
@@ -41,7 +45,7 @@
     <!-- Top nav END -->
     <div class="row" id="body-row">
     <!-- Sidebar -->
-        <div id="sidebar-container" class="sidebar-expanded col-md-4 col-lg-3">
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-md-4 col-lg-3">
             <img src="https://caguirre97.github.io/images/profile.JPG" class="img-fluid" alt="Responsive image">
             <div class="my-sidebar sticky-top sticky-offset">
                 <ul class="list-group sticky-top sticky-offset">
@@ -49,13 +53,13 @@
                         PhD student at Johns Hopkins University
                     </li>
                     <li class="list-group-item align-items-center menu-collapsed">
+                        Associated with the Center for Language and Speech Processing (<a href="https://www.clsp.jhu.edu/">CLSP</a>)
+                    </li>
+                    <li class="list-group-item align-items-center menu-collapsed">
                         Salvadoreño
                     </li>
                     <li class="list-group-item align-items-center menu-collapsed">
-                        KDD Alumni
-                    </li>
-                    <li class="list-group-item align-items-center menu-collapsed">
-                        Kansas State University Alumni
+                        Kansas State University Alumnus
                     </li>
                 </ul>
                 <!-- Add icon library -->
@@ -75,11 +79,11 @@
                     <div class="card-body">
                         <h1 class="card-title">Publications</h1>
                         <ul class="list-group">
-                            <li class="list-group-item"> Bose, A., Behzadan, V., Aguirre, C., &amp; Hsu, W. H. (2019). A Novel Approach for Detection and Ranking of Trendy and Emerging Cyber Threat Events in Twitter Streams. <em>Proceedings of the Foundations of Open Source Intelligence and Security Informatics (FOSINT-SI 2019)</em>, Vancouver, Canada, August 27, 2019, to appear. <a href="https://arxiv.org/pdf/1907.07768.pdf" class="float-right"><i class="fa fa-file-pdf-o"></i></a></li>
-                            <li class="list-group-item"> Yang, H., Aguirre, C. A., De La Torre, M. F., Christensen, D., Bobadilla, L., Davich, E., Roth, J., Luo, L., Theis, Y., Lam, A., Han, T. Y.-J., Buttler, D., &amp; Hsu, W. H. (2019). Pipelines for Procedural Information Extraction from Scientific Literature: Towards Recipes using Machine Learning and Data Science. <em>Proceedings of the 2nd International Conference on Document Analysis and Recognition Workshop on Open Services and Tools for Document Analysis (ICDAR-OST 2019)</em>, Sydney, Australia, September 21 2019, to appear. <a class="float-right" href="http://kdd.cs.ksu.edu/Publications/Conference/yang2019pipelines.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
+                            <li class="list-group-item"> Bose, A., Behzadan, V., Aguirre, C., &amp; Hsu, W. H. (2019). A Novel Approach for Detection and Ranking of Trendy and Emerging Cyber Threat Events in Twitter Streams. *Proceedings of the Foundations of Open Source Intelligence and Security Informatics (FOSINT-SI 2019)*, Vancouver, Canada, August 27, 2019, to appear. <a href="https://arxiv.org/pdf/1907.07768.pdf" class="float-right"><i class="fa fa-file-pdf-o"></i></a></li>
+                            <li class="list-group-item"> Yang, H., Aguirre, C. A., De La Torre, M. F., Christensen, D., Bobadilla, L., Davich, E., Roth, J., Luo, L., Theis, Y., Lam, A., Han, T. Y.-J., Buttler, D., &amp; Hsu, W. H. (2019). Pipelines for Procedural Information Extraction from Scientific Literature: Towards Recipes using Machine Learning and Data Science. *Proceedings of the 2nd International Conference on Document Analysis and Recognition Workshop on Open Services and Tools for Document Analysis (ICDAR-OST 2019)*, Sydney, Australia, September 21 2019, to appear. <a class="float-right" href="http://kdd.cs.ksu.edu/Publications/Conference/yang2019pipelines.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
                             <li class="list-group-item"> Behzadan, V., Aguirre, C., Bose, A., & Hsu, W. (2018). Corpus and Deep Learning Classifier for Collection of Cyber Threat Indicators in Twitter Stream. <em>Proceedings of the IEEE International Conference on Big Data 2018 (IEEE BigData 2018) Workshop on Big Data Analytics for Cyber Threat Hunting (CyberHunt 2018)</em>, Seattle, WA, USA, December 10-13, 2018. <a class="float-right" href="http://kdd.cs.ksu.edu/Publications/Conference/behzadan2018corpus.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
                             <li class="list-group-item"> De La Torre, M. F., Aguirre, C. A., Anshutz, B., &amp; Hsu, W. (2018). MATESC: Metadata-Analytic Text Extractor and Section Classifier for Scientific Publications. <em>Proceedings of the 10th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management (IC3K 2018): International Conference on Knowledge Discovery and Information Retrieval (KDIR 2018)</em>, Seville, Spain, September 18-20, 2018. <a class="float-right" href="http://kdd.cs.ksu.edu/Publications/Conference/delatorre2018matesc.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
-                            <li class="list-group-item"> Aguirre, C. A., Coen, S., De La Torre, M. F., Hsu, W. H., &amp; Rys, M. (2018).  Towards Faster Annotation Interfaces for Learning to Filter in Information Extraction and Search. <em>Proceedings of the 2nd ACM Intelligent User Interfaces (IUI) Workshop on Exploratory Search and Interactive Data Analytics (ESIDA 2018)</em>, Tokyo, Japan, March 11, 2018. <a class="float-right" href="http://kdd.cs.ksu.edu/Publications/Conference/aguirre2018faster.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
+                            <li class="list-group-item"> Aguirre, C. A., Coen, S., De La Torre, M. F., Hsu, W. H., &amp; Rys, M. (2018).  Towards Faster Annotation Interfaces for Learning to Filter in Information Extraction and Search. <em> Proceedings of the 2nd ACM Intelligent User Interfaces (IUI) Workshop on Exploratory Search and Interactive Data Analytics (ESIDA 2018)</em>, Tokyo, Japan, March 11, 2018. <a class="float-right" href="http://kdd.cs.ksu.edu/Publications/Conference/aguirre2018faster.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
                             <li class="list-group-item"> Aguirre, C. A., Gullapalli, S., De La Torre, M. F., Lam, A., Weese, J. L., &amp; Hsu, W. H. (2017). Learning to Filter Documents for Information Extraction using Rapid Annotation. <em>Proceedings of the 1st International Conference on Machine Learning and Data Science (MLDS 2017)</em>, Noida, India, December 14-15, 2017. <a class="float-right" href="http://kdd.cs.ksu.edu/Publications/Conference/aguirre2017learning.pdf"><i class="fa fa-file-pdf-o"></i></a></li>
                         </ul>
                     </div>
