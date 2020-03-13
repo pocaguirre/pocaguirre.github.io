@@ -12,6 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <!-- AM Charts -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/timeline.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/bullets.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
     <!-- SideNav -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
@@ -71,7 +78,7 @@
                     <li> <a href="https://www.linkedin.com/in/carlos-alejandro-aguirre-pocasangre"><i class="fa fa-linkedin"></i></a></li>
                     <li> <a href="https://github.com/pocaguirre"><i class="fa fa-github"></i></a></li>
                     <li> <a href="https://www.instagram.com/carr_loss/"><i class="fa fa-instagram"></i></a></li>
-                    <li> <a href="mailto:caguirr4@jhu.edu"><i class="fa fa-envelope"></i></a></li>
+                    <li> <a href="mailto:carlos@pocaguirre.com"><i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -107,10 +114,10 @@
                             My research interests are very broad, I have worked on multiple areas of computer science such as cyber security threat detection through social network analysis on twitter, information extraction for the automated creation of step-by-step instructions from the methodology contained in scientific publications, and anomaly detection using computer vision to autonomously detect defective insulators in electric poles from pictures captured by drones.
                         </p>
 			<p class="card-text">
-			    My current research is in the area of health care and machine learning. Specifically, I work in mental health detection using social network analysis techniques. Another aspect of machine learning research I am interested is demographic bias in machine learning models. 
+			    My current research is in the area of health care and machine learning. Specifically, I work in mental health detection using social network analysis techniques. Another aspect of machine learning research I am interested is demographic bias in machine learning models.
 			</p>
                         <p class="card-text">
-                            Future research will further develop social network analysis techniques in health care prediction. I am also interested in the Human Computer Interaction (HCI) problems that arise with the implementation and deployment of machine learningmodels and intelligent systems in the health care and other industries. 
+                            Future research will further develop social network analysis techniques in health care prediction. I am also interested in the Human Computer Interaction (HCI) problems that arise with the implementation and deployment of machine learningmodels and intelligent systems in the health care and other industries.
                         </p>
                     </div>
                 </div>
@@ -119,7 +126,8 @@
                 <div class="card col-12">
                     <div class="card-body">
                         <h1 class="card-title">My Life's Timeline</h1>
-                        <div class="container mt-5 mb-5">
+                        <div id="chartdiv"></div>
+                        <!-- <div class="container mt-5 mb-5">
                             <div class="row">
                                 <div>
                                     <ul class="timeline">
@@ -163,7 +171,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
