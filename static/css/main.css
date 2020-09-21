@@ -1,6 +1,17 @@
+.pub{
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+
+
 #chartdiv {
   max-width: 100%;
   height: 500px;
+}
+
+.navbar-brand{
+    padding-right: 10px;
 }
 
 .image-content {
@@ -20,7 +31,7 @@
 }
 
 body {
-    padding-top: 56px;
+    padding-top: 100px;
 }
 
 .sticky-offset {
@@ -75,7 +86,7 @@ body {
 }
 
 .my-sidebar .list-group-item{
-    background-color: #333;
+    background-color: rgba(168, 167, 167, 0.2);
 }
 
 /* Closed submenu icon */
@@ -102,7 +113,7 @@ body {
 }
 
 .my-sidebar{
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -112,7 +123,7 @@ body {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    color: whitesmoke;
+    color: black;
     text-align: center;
 }
 
@@ -176,14 +187,14 @@ ul.timeline > li > h6.float-right{
 
 /*Change icons size here*/
 .social-icons .fa {
-	font-size: 1.8em;
+	font-size: 1.5em;
     margin-top: 10px;
 }
 /*Change icons circle size and color here*/
 .social-icons .fa {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
 	text-align: center;
 	color: #FFF;
 	color: rgba(255, 255, 255, 0.8);
@@ -229,7 +240,7 @@ ul.timeline > li > h6.float-right{
 .social-icons .fa-dropbox{background-color:#018BD3;}
 .social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
 .social-icons .fa-flickr{background-color:#FF0084;}
-.social-icons .fa-foursquare{background-color:#0086BE;}
+.social-icons .fa-foursquare, .fa-graduation-cap{background-color:#0086BE;}
 .social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;}
 .social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;}
 .social-icons .fa-html5{background-color:#E54D26;}
