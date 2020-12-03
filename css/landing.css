@@ -4,7 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
 
-
+.subtitle{
+  margin-top:7px;
+  margin-bottom: 5px;
+}
 
  body {
     font-family: 'Lato';

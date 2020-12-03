@@ -7,7 +7,7 @@ am4core.ready(function() {
     // Create chart instance
     var covid = am4core.create("chartdiv", am4charts.XYChart);
     var title = covid.titles.create();
-    title.text = "COVID-19 Cases Population Percent";
+    title.text = "Cummulative COVID-19 Cases Population Percent";
 
     
     // Set input format for the dates
@@ -669,7 +669,7 @@ valueAxis.title.text = "Unemployment Percent"
 var series = chart.series.push(new am4charts.ColumnSeries());
 series.dataFields.categoryX = "country";
 series.dataFields.valueY = "visits";
-series.tooltipText = "{valueY.percent}%"
+// series.tooltipText = "{values.valueY.workingValue}%"
 series.columns.template.strokeOpacity = 0;
 series.columns.template.column.cornerRadiusTopRight = 10;
 series.columns.template.column.cornerRadiusTopLeft = 10;

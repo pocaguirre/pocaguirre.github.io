@@ -52,7 +52,7 @@
                         <a class="nav-link" href="#state">State Level</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#unemploy">Cases and Unemployment</a>
+                        <a class="nav-link" href="#unemploy">Unemployment</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
             <div class="container">
                 <h1 class="masthead-heading mb-0">COVID-19 in Minorities</h1>
                 <h2 class="masthead-subheading mb-0">How has COVID-19 affected racial/ethnic minorities?</h2>
-                
+
             </div>
         </div>
         <div class="bg-circle-1 bg-circle"></div>
@@ -75,68 +75,118 @@
 
     <section>
         <div class="container p-5" id="minorities">
+            <div>
+                COVID-19 has impacted all of us, but it is important to recognize that minority groups have been impacted disproportionately. For our analysis, we decided to look at data surrounding COVID-19 cases, hospitalizations, and deaths across different US localities and investigate deeper into how various ethnic groups have been affected by this pandemic. Specifically, our data is aggregated from <a target="_blank" href="https://covidtracking.com/race">The COVID Tracking Project</a>, <a target="_blank" href="https://www.epi.org/indicators/state-unemployment-race-ethnicity/">the Economic Policy Institute<a>, and <a target="_blank" href="https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?dataView=1&currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">KFF</a>. These datasets provide information about COVID cases, unemployment, and ethnic population distributions across all 50 US states. The goal of our project is to highlight the inequity that exists in the public health system and show how pandemics like this one can have significant impacts on underrepresented communities.
+            </div>
+            <br />
             <div class="row align-items-center">
                 <h3 class="display-4">COVID-19 Cases in Minorities</h3>
                 <div id="piediv"></div>
+                <h6>Figure 1. COVID-19 Cases of racial/ethnic minorities by region.</h6>
             </div>
             <div class="row">
                 <div class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper, augue id gravida finibus, lorem neque rhoncus sapien, ac lacinia orci diam nec eros. Nunc sollicitudin elit vel lorem finibus, in cursus magna ullamcorper. Donec in tincidunt ante. Suspendisse non venenatis tellus. Duis sodales eros nec risus scelerisque molestie in eu urna. Duis nec odio dapibus lacus convallis facilisis sit amet id neque. Proin convallis ligula lorem, ut consequat lectus commodo id. Cras tristique non sem quis condimentum.
-
-                    Sed tincidunt nunc lacinia elit facilisis blandit. Donec neque felis, finibus eu viverra vitae, cursus a dolor. Suspendisse potenti. Fusce facilisis tristique nibh, vitae pretium ligula vehicula sed. Aliquam quis libero congue, congue metus in, ornare magna. Nulla vel augue eu sapien vehicula placerat non a purus. Ut ut interdum augue. Curabitur venenatis a erat id fermentum. Mauris eget neque faucibus, commodo mi sed, tempor tortor. Cras eleifend risus at tortor interdum pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sed ante ut eros congue congue vel et nunc. Vestibulum tristique mauris metus, eu venenatis orci blandit vel. Etiam nec laoreet velit. Nullam rutrum in lectus et bibendum.
-
-                    Nunc pretium tellus sit amet felis bibendum, ut accumsan justo convallis. Aliquam a dictum nulla. Donec a enim efficitur, molestie lectus vitae, auctor odio. Aenean laoreet sem ac risus pretium, at auctor ante venenatis. Pellentesque condimentum scelerisque turpis, non pulvinar libero. Sed scelerisque rhoncus nunc, at aliquet eros sollicitudin ut. Morbi porttitor placerat purus id condimentum. Maecenas cursus aliquam mauris eget maximus.
-
-                    Vivamus eget velit at nulla bibendum laoreet. Nullam molestie ligula leo, sit amet egestas erat convallis volutpat. Sed risus elit, viverra a metus sed, condimentum mattis ex. Sed sit amet tellus malesuada erat pulvinar fringilla et non massa. Nunc sit amet posuere leo. Integer tristique metus nec purus condimentum, id pellentesque ligula dignissim. Phasellus et tincidunt purus. Integer mattis vehicula facilisis. Morbi condimentum, dui non dapibus efficitur, enim sem consectetur turpis, vel sodales ipsum odio id nisl. Sed euismod ipsum pretium orci bibendum, vitae tristique lectus tincidunt. Donec sit amet lectus sed lectus faucibus dignissim in ut mi. Aliquam sodales blandit justo. Quisque rhoncus purus sed dui convallis, non sollicitudin tortor pellentesque. Nullam volutpat est ac erat elementum sodales.
+                    The above chart depicts COVID case breakdowns for minority groups across the 4 Census regions in the United States; namely, the West, the Midwest, the Northeast, and the South. The larger pie chart shows that minority groups were significantly impacted in the West and South regions, with lots of minority cases stemming from Florida, Texas, and California. The larger pie chart is further broken down into smaller pie charts within each region that provide indication as to how many COVID cases were found for each minority group listed in the dataset. The COVID Tracking Project specifically listed cases into the following minority groups: Black, LatinX, Asian, American Indian and Alaska Native, Native Hawaiian and Pacific Islander, and Multiracial. The majority of cases, understandably, come from the larger population groups i.e. Black and LatinX. As such, we can look at normalized state-by-state breakdowns in the following chart.
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="separator"></div>
+    <div class="separator" id="state"></div>
     <section>
         <div class="container p-5" id="state">
-            <div class="row align-items-center">
-                <h3 class="display-4">Cases by State</h3>
+            <div class="align-items-center">
+                <h3 class="display-4">Normalized Cases and Deaths by State</h3>
+                <p><i>Click the race labels on for either "Cases" or "Deaths" to toggle the Heat Map's data display</i></p>
                 <div id="mapdiv"></div>
+                <h6>Figure 2. COVID-19 Cases and Deaths of racial/ethnic groups by state.</h6>
             </div>
             <div class="row">
                 <div class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper, augue id gravida finibus, lorem neque rhoncus sapien, ac lacinia orci diam nec eros. Nunc sollicitudin elit vel lorem finibus, in cursus magna ullamcorper. Donec in tincidunt ante. Suspendisse non venenatis tellus. Duis sodales eros nec risus scelerisque molestie in eu urna. Duis nec odio dapibus lacus convallis facilisis sit amet id neque. Proin convallis ligula lorem, ut consequat lectus commodo id. Cras tristique non sem quis condimentum.
-
-                    Sed tincidunt nunc lacinia elit facilisis blandit. Donec neque felis, finibus eu viverra vitae, cursus a dolor. Suspendisse potenti. Fusce facilisis tristique nibh, vitae pretium ligula vehicula sed. Aliquam quis libero congue, congue metus in, ornare magna. Nulla vel augue eu sapien vehicula placerat non a purus. Ut ut interdum augue. Curabitur venenatis a erat id fermentum. Mauris eget neque faucibus, commodo mi sed, tempor tortor. Cras eleifend risus at tortor interdum pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sed ante ut eros congue congue vel et nunc. Vestibulum tristique mauris metus, eu venenatis orci blandit vel. Etiam nec laoreet velit. Nullam rutrum in lectus et bibendum.
-
-                    Nunc pretium tellus sit amet felis bibendum, ut accumsan justo convallis. Aliquam a dictum nulla. Donec a enim efficitur, molestie lectus vitae, auctor odio. Aenean laoreet sem ac risus pretium, at auctor ante venenatis. Pellentesque condimentum scelerisque turpis, non pulvinar libero. Sed scelerisque rhoncus nunc, at aliquet eros sollicitudin ut. Morbi porttitor placerat purus id condimentum. Maecenas cursus aliquam mauris eget maximus.
-
-                    Vivamus eget velit at nulla bibendum laoreet. Nullam molestie ligula leo, sit amet egestas erat convallis volutpat. Sed risus elit, viverra a metus sed, condimentum mattis ex. Sed sit amet tellus malesuada erat pulvinar fringilla et non massa. Nunc sit amet posuere leo. Integer tristique metus nec purus condimentum, id pellentesque ligula dignissim. Phasellus et tincidunt purus. Integer mattis vehicula facilisis. Morbi condimentum, dui non dapibus efficitur, enim sem consectetur turpis, vel sodales ipsum odio id nisl. Sed euismod ipsum pretium orci bibendum, vitae tristique lectus tincidunt. Donec sit amet lectus sed lectus faucibus dignissim in ut mi. Aliquam sodales blandit justo. Quisque rhoncus purus sed dui convallis, non sollicitudin tortor pellentesque. Nullam volutpat est ac erat elementum sodales.
+                    <p>
+                        Nearly a year into the coronavirus pandemic and we are all well accustomed to seeing maps that show the largest states like California, New York, and Texas have more COVID-19 cases than any other states in the nation. However, these simple case-count rankings do not account for population densities and fail to show who is actually affected the most.
+                    </p>
+                    <p>
+                        This series of graphs highlights which demographic populations have experienced the highest rates of COVID-19 cases and deaths proportional to how many individuals make up each demographic. These numbers are broken down on the state-by-state level as well as for the nation as a whole.
+                    </p>
+                    <h3>How To Read</h3>
+                    <p>
+                        The dual-axis chart on the left displays the number of cases (blue) and deaths (red) per 1,000 people per ethnic group -- White, Black, LatinX, Asian, American Indian/Alaska Native (AIAN), Native Hawaiian/Pacific Islander (NHPI), or Multiracial. The default state displays the breakdown for the United States as a whole, and by clicking an individual state from the heat map you will see the graphs change to reflect the COVID-19 numbers broken down to that state’s specific population distribution.
+                    </p>
+                    <p>
+                        The heat map on the right directly compares how each state measures up from the same data (cases/deaths per 1,000 people). The darker the state’s color, the more densely that population has been affected by COVID-19. By clicking on the race labels from the chart on the left, the heat map will change to reflect breakdown by that race. For example, clicking the “LatinX” label from the right side of the dual-axis graph will show which states have the highest rate of LatinX COVID-19 deaths.
+                    </p>
+                    <h3>Analysis</h3>
+                    <p>
+                        Normalizing COVID-19 cases and deaths to demographic population distributions allows us to see inequalities that may otherwise remain invisible. For example, in New York 3,000 more White people have died from COVID-19 than Black individuals, however this is extremely misleading. Once we account for the number of White and Black people living in New York, we see that the <b>Black peope ate dying 3 times as frequently relative to Whites</b>.
+                    </p>
+                    <p>
+                        This trend is not specific to just New York. Black, LatinX, and Indiginous people have been affected the most by COVID-19 deaths across the nation and this is apparent just by clicking through the states and seeing that the White death line rarely passes above that of minority populations.
+                    </p>
+                    <p>
+                        It is easy to read big numbers and brush them away, but by taking the time and responsibility to look with more scrutiny, we ensure to give under-represented minorities the attention they deserve.
+                    </p>
+                    <h3>Data</h3>
+                    <p>
+                        The above charts pulled race-specific data for COVID-19 from the <a href="https://covidtracking.com/race/dashboard" target_="blank">Racial Data Tracker</a>[1] and state demographic information from <a href="https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?dataView=1&currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D" target_="blank">[2]</a>. All data was normalized by population per state and ethnic group and displayed as a measure of X out of 1,000 people.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="separator"></div>
+    <div class="separator"  id="unemploy"></div>
     <section>
-        <div class="container p-5" id="unemploy">
+        <div class="container p-5">
             <div class="row align-items-center">
                 <h3 class="display-4">Unemployment</h3>
                 <div id="chartdiv"></div>
+                <h6>Figure 3. Cummulative COVID-19 Cases racial/ethnic groups by date.</h6>
             </div>
             <div class="row">
                 <div class="col-lg-6 order-lg-2">
                     <div id="unemploymentdiv"></div>
+                    <h6>Figure 4. Change in Unemployment Rate from Q1 to Q2 in 2020.</h6>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper, augue id gravida finibus, lorem neque rhoncus sapien, ac lacinia orci diam nec eros. Nunc sollicitudin elit vel lorem finibus, in cursus magna ullamcorper. Donec in tincidunt ante. Suspendisse non venenatis tellus. Duis sodales eros nec risus scelerisque molestie in eu urna. Duis nec odio dapibus lacus convallis facilisis sit amet id neque. Proin convallis ligula lorem, ut consequat lectus commodo id. Cras tristique non sem quis condimentum.
+                        Now let’s look at a longitudinal view of COVID-19, specifically at how it has affected minority populations and how unemployment rates also affect these communities unequally.
 
-                        Sed tincidunt nunc lacinia elit facilisis blandit. Donec neque felis, finibus eu viverra vitae, cursus a dolor. Suspendisse potenti. Fusce facilisis tristique nibh, vitae pretium ligula vehicula sed. Aliquam quis libero congue, congue metus in, ornare magna. Nulla vel augue eu sapien vehicula placerat non a purus. Ut ut interdum augue. Curabitur venenatis a erat id fermentum. Mauris eget neque faucibus, commodo mi sed, tempor tortor. Cras eleifend risus at tortor interdum pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sed ante ut eros congue congue vel et nunc. Vestibulum tristique mauris metus, eu venenatis orci blandit vel. Etiam nec laoreet velit. Nullam rutrum in lectus et bibendum.
+                        <h6 class="subtitle">Methodology.</h6> Figure 3 shows the cumulative COVID-19 cases scaled by population from March to November 2020. The COVID-19 cases by racial/ethnic groups were collected from [3]. We convert the COVID-19 cases numbers to percent of infected population using the demographic information by state collected from [2]. This view enables us to observe and make a fair comparison of COVID-19 cases between demographic groups as the concentration of infected population.
 
-                        Nunc pretium tellus sit amet felis bibendum, ut accumsan justo convallis. Aliquam a dictum nulla. Donec a enim efficitur, molestie lectus vitae, auctor odio. Aenean laoreet sem ac risus pretium, at auctor ante venenatis. Pellentesque condimentum scelerisque turpis, non pulvinar libero. Sed scelerisque rhoncus nunc, at aliquet eros sollicitudin ut. Morbi porttitor placerat purus id condimentum. Maecenas cursus aliquam mauris eget maximus.
+                        Figure 4 shows the unemployment percent change between Q1 and Q2 of 2020 by demographic group. We collected this information from [3].
 
-                        Vivamus eget velit at nulla bibendum laoreet. Nullam molestie ligula leo, sit amet egestas erat convallis volutpat. Sed risus elit, viverra a metus sed, condimentum mattis ex. Sed sit amet tellus malesuada erat pulvinar fringilla et non massa. Nunc sit amet posuere leo. Integer tristique metus nec purus condimentum, id pellentesque ligula dignissim. Phasellus et tincidunt purus. Integer mattis vehicula facilisis. Morbi condimentum, dui non dapibus efficitur, enim sem consectetur turpis, vel sodales ipsum odio id nisl. Sed euismod ipsum pretium orci bibendum, vitae tristique lectus tincidunt. Donec sit amet lectus sed lectus faucibus dignissim in ut mi. Aliquam sodales blandit justo. Quisque rhoncus purus sed dui convallis, non sollicitudin tortor pellentesque. Nullam volutpat est ac erat elementum sodales.
+                        <h6 class="subtitle">Analysis.</h6> In Figure 3, from the start, we observe that COVID-19 has affected minority groups, specifically Latinx and Black, disproportionally compared to the White population. Minority communities have been traditionally underserved and undertreated by the health department, and our data shows that the COVID-19 crisis is not an exception. The infection rate of Black and Latinx communities is extremely high compared to White individuals, and this difference became bigger as we moved into the end of the summer: Black and Latinx are infected twice or more times as we get to September. Since the fall, the latest infection information has started to level the infection rate among demographics as COVID-19 starts to spread in the rural, predominately white, population. Although the differences in infection rates between demographic groups have decreased, the Black and Latinx communities are still affected disproportionately.
+
+                        If we combine the information from Figure 3 and Figure 4, we observe that minority populations are unequally affected by both unemployment rate and infection rate. Unemployment rate has affected the Black and Latinx communities more (with unemployment rate change close to twice as it is for the White population). Intuitively this makes sense as more people get sick with the pandemic, they are more likely to lose their jobs, and unemployment rates spike for such communities. But, while this is an intuitive remark, it is still left to be seen how much the combination of unemployment and infection rate affects our minority communities in the US. 
+    
                     </div>
                 </div>
             </div>
 
+        </div>
+    </section>
+    <div class="separator"  id="references"></div>
+    <section>
+        <div class="container p-5" >
+            <div class="row align-items-center">
+                <h3 class="display-4">References</h3>
+                <div>
+                    <div class="csl-bib-body" style="line-height: 1.35; ">
+                        <div class="csl-entry" style="clear: left; ">
+                          <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[1]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">“2020Q1-Q2 | State unemployment by race and ethnicity,” <i>Economic Policy Institute</i>. <a href="https://www.epi.org/indicators/state-unemployment-race-ethnicity/">https://www.epi.org/indicators/state-unemployment-race-ethnicity/</a> (accessed Dec. 02, 2020).</div>
+                        </div>
+                        <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=2020Q1-Q2%20%7C%20State%20unemployment%20by%20race%20and%20ethnicity&amp;rft.description=While%20there%20have%20been%20improvements%20in%20prospects%20for%20black%20and%20Hispanic%20workers%20in%20some%20states%2C%20unemployment%20rates%20for%20these%20groups%20increased%20in%20the%20majority%20of%20states%20for%20which%20data%20are%20available%20and%20remain%20high%20relative%20to%20those%20of%20white%20workers.&amp;rft.identifier=https%3A%2F%2Fwww.epi.org%2Findicators%2Fstate-unemployment-race-ethnicity%2F&amp;rft.language=en-US"></span>
+                        <div class="csl-entry" style="clear: left; ">
+                          <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[2]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">“Population Distribution by Race/Ethnicity | KFF.” <a href="https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?currentTimeframe=0&amp;sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?currentTimeframe=0&amp;sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D</a> (accessed Dec. 02, 2020).</div>
+                        </div>
+                        <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Population%20Distribution%20by%20Race%2FEthnicity%20%7C%20KFF&amp;rft.identifier=https%3A%2F%2Fwww.kff.org%2Fother%2Fstate-indicator%2Fdistribution-by-raceethnicity%2F%3FcurrentTimeframe%3D0%26sortModel%3D%257B%2522colId%2522%3A%2522Location%2522%2C%2522sort%2522%3A%2522asc%2522%257D"></span>
+                        <div class="csl-entry" style="clear: left; ">
+                          <div class="csl-left-margin" style="float: left; padding-right: 0.5em;text-align: right; width: 1em;">[3]</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">“The COVID Tracking Project,” <i>The COVID Tracking Project</i>. <a href="https://covidtracking.com/">https://covidtracking.com/</a> (accessed Dec. 02, 2020).</div>
+                        </div>
+                        <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=The%20COVID%20Tracking%20Project&amp;rft.rights=The%20Atlantic%20Monthly%20Group&amp;rft.description=The%20COVID%20Tracking%20Project%20collects%20and%20publishes%20the%20most%20complete%20testing%20data%20available%20for%20US%20states%20and%20territories.&amp;rft.identifier=https%3A%2F%2Fcovidtracking.com%2F&amp;rft.language=en"></span>
+                      </div>
+                </div>
+            </div>
         </div>
     </section>
 
