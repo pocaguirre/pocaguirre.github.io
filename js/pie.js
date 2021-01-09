@@ -13,52 +13,12 @@ am4core.ready(function () {
     var chart = container.createChild(am4charts.PieChart);
 
     // Add data
-    chart.data = [{
-      "country": "Midwest",
-      "litres": 14317026,
-      "subData": [ 
-        { name: "Black Cases", value: 4007776 }, 
-        { name: "LatinX Cases", value: 7709516 }, 
-        { name: "Asian Cases", value: 1375119 }, 
-        { name: "American Indian and Alaska Native Cases", value: 388179 }, 
-        { name: "Native Hawaiian and Pacific Islander Cases", value: 74478 }, 
-        { name: "Multiracial Cases", value: 761958 }]
-    }, {
-      "country": "West",
-      "litres": 25399924,
-      "subData": [ 
-        { name: "Black Cases", value: 19552923 }, 
-        { name: "LatinX Cases", value: 1793416 }, 
-        { name: "Asian Cases", value: 1876186 }, 
-        { name: "American Indian and Alaska Native Cases", value: 1363831 }, 
-        { name: "Native Hawaiian and Pacific Islander Cases", value: 433010 }, 
-        { name: "Multiracial Cases", value: 380558 }]
-    }, {
-      "country": "South",
-      "litres": 35843092,
-      "subData": [ 
-        { name: "Black Cases", value: 12792268 }, 
-        { name: "LatinX Cases", value: 21003083 }, 
-        { name: "Asian Cases", value: 1234884 }, 
-        { name: "American Indian and Alaska Native Cases", value: 505679 }, 
-        { name: "Native Hawaiian and Pacific Islander Cases", value: 139815 }, 
-        { name: "Multiracial Cases", value: 167363 }]
-    }, {
-      "country": "Northeast",
-      "litres": 8616962,
-      "subData": [ 
-        { name: "Black Cases", value: 4601109 }, 
-        { name: "LatinX Cases", value: 3293598 }, 
-        { name: "Asian Cases", value: 690053 }, 
-        { name: "American Indian and Alaska Native Cases", value: 5016 }, 
-        { name: "Native Hawaiian and Pacific Islander Cases", value: 167 }, 
-        { name: "Multiracial Cases", value: 27019 }]
-    }];
+  chart.data = [{ "region": "West", "deaths": 30249.0, "subData": [{ "name": "Black", "value": 2815.0 }, { "name": "HL", "value": 19089.0 }, { "name": "Asian", "value": 4245.0 }, { "name": "AIAN", "value": 2300.0 }, { "name": "NHPI", "value": 373.0 }, { "name": "Multiracial", "value": 490.0 }, { "name": "Other", "value": 937.0 }] }, { "region": "Midwest", "deaths": 20244.0, "subData": [{ "name": "Black", "value": 9950.0 }, { "name": "HL", "value": 4562.0 }, { "name": "Asian", "value": 1323.0 }, { "name": "AIAN", "value": 503.0 }, { "name": "NHPI", "value": 62.0 }, { "name": "Multiracial", "value": 465.0 }, { "name": "Other", "value": 3379.0 }] }, { "region": "Northeast", "deaths": 38880.0, "subData": [{ "name": "Black", "value": 15569.0 }, { "name": "HL", "value": 14745.0 }, { "name": "Asian", "value": 4003.0 }, { "name": "AIAN", "value": 16.0 }, { "name": "NHPI", "value": 5.0 }, { "name": "Multiracial", "value": 103.0 }, { "name": "Other", "value": 4439.0 }] }, { "region": "South", "deaths": 54107.0, "subData": [{ "name": "Black", "value": 26754.0 }, { "name": "HL", "value": 22636.0 }, { "name": "Asian", "value": 1412.0 }, { "name": "AIAN", "value": 455.0 }, { "name": "NHPI", "value": 81.0 }, { "name": "Multiracial", "value": 148.0 }, { "name": "Other", "value": 2621.0 }] }];
 
     // Add and configure Series
     var pieSeries = chart.series.push(new am4charts.PieSeries());
-    pieSeries.dataFields.value = "litres";
-    pieSeries.dataFields.category = "country";
+    pieSeries.dataFields.value = "deaths";
+    pieSeries.dataFields.category = "region";
     pieSeries.slices.template.states.getKey("active").properties.shiftRadius = 0;
     //pieSeries.labels.template.text = "{category}\n{value.percent.formatNumber('#.#')}%";
 

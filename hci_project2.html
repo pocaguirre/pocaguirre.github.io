@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#minorities">Cases in Minorities</a>
+                        <a class="nav-link" href="#minorities">Deaths in Minorities</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#state">State Level</a>
@@ -76,13 +76,20 @@
     <section>
         <div class="container p-5" id="minorities">
             <div>
-                COVID-19 has impacted all of us, but it is important to recognize that minority groups have been impacted disproportionately. For our analysis, we decided to look at data surrounding COVID-19 cases, hospitalizations, and deaths across different US localities and investigate deeper into how various ethnic groups have been affected by this pandemic. Specifically, our data is aggregated from <a target="_blank" href="https://covidtracking.com/race">The COVID Tracking Project</a>, <a target="_blank" href="https://www.epi.org/indicators/state-unemployment-race-ethnicity/">the Economic Policy Institute<a>, and <a target="_blank" href="https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?dataView=1&currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">KFF</a>. These datasets provide information about COVID cases, unemployment, and ethnic population distributions across all 50 US states. The goal of our project is to highlight the inequity that exists in the public health system and show how pandemics like this one can have significant impacts on underrepresented communities.
+                <p>COVID-19 has impacted all of us, but minority groups have been impacted disproportionately. In this analysis, we collect
+                COVID-19 data containing cases, hospitalizations, and deaths across different US localities and show how various ethnic
+                groups have been affected by this pandemic. Specifically, our data is aggregated from <a target="_blank" href="https://covidtracking.com/race">The COVID Tracking Project</a>, <a target="_blank" href="https://www.epi.org/indicators/state-unemployment-race-ethnicity/">the Economic Policy Institute<a>, and <a target="_blank"
+                    href="https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?dataView=1&currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">KFF</a>.</p>
+                <p>
+                    The goal of our project is to highlight the inequity that exists in the public health system and show how pandemics have
+                    significant impacts on underrepresented communities.
+                </p>
             </div>
             <br />
             <div class="row align-items-center">
-                <h3 class="display-4">COVID-19 Cases in Minorities</h3>
+                <h3 class="display-4">COVID-19 Deaths in Minorities</h3>
                 <div id="piediv"></div>
-                <h6>Figure 1. COVID-19 Cases of racial/ethnic minorities by region.</h6>
+                <h6>Figure 1. COVID-19 Deaths of racial/ethnic minorities by region.</h6>
             </div>
             <div class="row">
                 <div class="">
@@ -140,14 +147,10 @@
             <div class="row align-items-center">
                 <h3 class="display-4">Unemployment</h3>
                 <div id="chartdiv"></div>
-                <h6>Figure 3. Cummulative COVID-19 Cases racial/ethnic groups by date.</h6>
+                <h6>Figure 3. Cummulative COVID-19 Cases and Unemployment Rate of racial/ethnic groups by date.</h6>
             </div>
             <div class="row">
-                <div class="col-lg-6 order-lg-2">
-                    <div id="unemploymentdiv"></div>
-                    <h6>Figure 4. Change in Unemployment Rate from Q1 to Q2 in 2020.</h6>
-                </div>
-                <div class="col-lg-6 order-lg-1">
+                <div class="col-lg-12 order-lg-1">
                     <div class="">
                         <p>
                         Now let’s look at a longitudinal view of COVID-19, specifically at how it has affected minority populations and how unemployment rates also affect these communities unequally.

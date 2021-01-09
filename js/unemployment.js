@@ -5,7 +5,13 @@ am4core.ready(function() {
     // Themes end
     
     // Create chart instance
-    var covid = am4core.create("chartdiv", am4charts.XYChart);
+    var mainContainer = am4core.create("chartdiv", am4core.Container);
+    mainContainer.width = am4core.percent(90);
+    mainContainer.height = am4core.percent(90);
+    mainContainer.layout = "vertical";
+    var covid = mainContainer.createChild(am4charts.XYChart);
+    covid.paddingRight = 0;
+    covid.paddingTop = 0;
     var title = covid.titles.create();
     title.text = "Cummulative COVID-19 Cases Population Percent";
 
@@ -20,7 +26,8 @@ am4core.ready(function() {
     valueAxis.numberFormatter = new am4core.NumberFormatter();
     valueAxis.numberFormatter.numberFormat = "0.00%"; 
     valueAxis.title.text = "Population Percent"
-    covid.scrollbarX = new am4charts.XYChartScrollbar();
+    var scrollBar = new am4charts.XYChartScrollbar();
+    covid.scrollbarX = scrollBar;
 
     // Create series
   var temp = createSeries("White", [{ 'date': '2020-04-12', 'value': 0.0003821449114530831 },
@@ -137,7 +144,6 @@ am4core.ready(function() {
   { 'date': '2021-01-02', 'value': 0.0457907450568787 }]);
     covid.scrollbarX.series.push(temp);
 
-
   var temp = createSeries("Latinx", [{ 'date': '2020-04-12', 'value': 0.0004450712232394688 },
   { 'date': '2020-04-17', 'value': 0.000498401939667935 },
   { 'date': '2020-04-22', 'value': 0.001180162056345797 },
@@ -253,6 +259,64 @@ am4core.ready(function() {
     );
     covid.scrollbarX.series.push(temp);
 
+  var temp = createSeries("AIAN", [{ 'date': '2020-04-12', 'value': 0.0006609587430023051 },
+  { 'date': '2020-04-17', 'value': 0.0007856235592981135 },
+  { 'date': '2020-04-22', 'value': 0.0016286399774192032 },
+  { 'date': '2020-04-27', 'value': 0.0018572705461730253 },
+  { 'date': '2020-05-02', 'value': 0.0025318718539775135 },
+  { 'date': '2020-05-07', 'value': 0.002867761208072635 },
+  { 'date': '2020-05-12', 'value': 0.0031415533706543727 },
+  { 'date': '2020-05-17', 'value': 0.004032553982217623 },
+  { 'date': '2020-05-22', 'value': 0.004431010961095169 },
+  { 'date': '2020-05-27', 'value': 0.0054377381568424515 },
+  { 'date': '2020-06-01', 'value': 0.005774568377475655 },
+  { 'date': '2020-06-06', 'value': 0.006555487604083361 },
+  { 'date': '2020-06-11', 'value': 0.007064966834454533 },
+  { 'date': '2020-06-16', 'value': 0.007526932304652585 },
+  { 'date': '2020-06-21', 'value': 0.008645622618431575 },
+  { 'date': '2020-06-26', 'value': 0.009244484169920497 },
+  { 'date': '2020-07-01', 'value': 0.010189584607423438 },
+  { 'date': '2020-07-06', 'value': 0.010813379122171519 },
+  { 'date': '2020-07-11', 'value': 0.011965940631321448 },
+  { 'date': '2020-07-16', 'value': 0.012700286964294115 },
+  { 'date': '2020-07-21', 'value': 0.013380533471327092 },
+  { 'date': '2020-07-26', 'value': 0.014855341769769959 },
+  { 'date': '2020-07-31', 'value': 0.015577927271016607 },
+  { 'date': '2020-08-05', 'value': 0.016538552006397894 },
+  { 'date': '2020-08-10', 'value': 0.016977466246412946 },
+  { 'date': '2020-08-15', 'value': 0.018312555863950697 },
+  { 'date': '2020-08-20', 'value': 0.019213906007432845 },
+  { 'date': '2020-08-25', 'value': 0.019632591616879146 },
+  { 'date': '2020-08-30', 'value': 0.020756456696617586 },
+  { 'date': '2020-09-04', 'value': 0.0213887190102084 },
+  { 'date': '2020-09-09', 'value': 0.022407677470950745 },
+  { 'date': '2020-09-14', 'value': 0.02291292280190055 },
+  { 'date': '2020-09-19', 'value': 0.02424095592040269 },
+  { 'date': '2020-09-24', 'value': 0.024561320976619467 },
+  { 'date': '2020-09-29', 'value': 0.025786799642470715 },
+  { 'date': '2020-10-04', 'value': 0.027551865267911747 },
+  { 'date': '2020-10-09', 'value': 0.028764642235498895 },
+  { 'date': '2020-10-14', 'value': 0.030803029590252624 },
+  { 'date': '2020-10-19', 'value': 0.03176694735851719 },
+  { 'date': '2020-10-24', 'value': 0.034303053111916074 },
+  { 'date': '2020-10-29', 'value': 0.03624688337959261 },
+  { 'date': '2020-11-03', 'value': 0.03749870630851014 },
+  { 'date': '2020-11-08', 'value': 0.041405184174624826 },
+  { 'date': '2020-11-13', 'value': 0.04453874017970551 },
+  { 'date': '2020-11-18', 'value': 0.049417603612927505 },
+  { 'date': '2020-11-23', 'value': 0.05159523921531731 },
+  { 'date': '2020-11-28', 'value': 0.055697887754622005 },
+  { 'date': '2020-12-03', 'value': 0.05915604271534083 },
+  { 'date': '2020-12-08', 'value': 0.06105847485534177 },
+  { 'date': '2020-12-13', 'value': 0.06657995013407349 },
+  { 'date': '2020-12-18', 'value': 0.069492402502705 },
+  { 'date': '2020-12-23', 'value': 0.07298066519264243 },
+  { 'date': '2020-12-28', 'value': 0.07499506045067507 },
+  { 'date': '2021-01-02', 'value': 0.07993555064214142 }]
+
+  );
+  covid.scrollbarX.series.push(temp);
+
     
 
     // Create a horizontal scrollbar with previe and place it underneath the date axis
@@ -315,10 +379,12 @@ am4core.ready(function() {
     covid.legend.scrollable = true;
     covid.legend.itemContainers.template.events.on("over", function(event) {
       processOver(event.target.dataItem.dataContext);
+      unpProcessOver(event.target.dataItem.name);
     })
     
     covid.legend.itemContainers.template.events.on("out", function(event) {
       processOut(event.target.dataItem.dataContext);
+      unpProcessOut(event.target.dataItem.name);
     })
     
     function processOver(hoveredSeries) {
@@ -366,6 +432,169 @@ am4core.ready(function() {
 
 //------------------------------------------------------------------------------------------------------------------------------------
 // Themes begin
+
+  var unp = mainContainer.createChild(am4charts.XYChart);
+  unp.paddingRight = 0;
+  unp.paddingTop = 0;
+  // var title = unp.titles.create();
+  // title.text = "Unemployment Rate per Population Group";
+
+
+  // Set input format for the dates
+  unp.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+
+  // Create axes
+  var unpdateAxis = unp.xAxes.push(new am4charts.DateAxis());
+  var unpvalueAxis = unp.yAxes.push(new am4charts.ValueAxis());
+
+  unpvalueAxis.numberFormatter = new am4core.NumberFormatter();
+  unpvalueAxis.numberFormatter.numberFormat = "0%";
+  unpvalueAxis.title.text = "Unemployment Rate"
+  // unp.scrollbarX = new am4charts.XYChartScrollbar();
+
+  // Create series
+  var temp = unpCreateSeries("White", [{ 'date': '2020-01-01', 'value': .030 },
+    { 'date': '2020-02-01', 'value': .030 },
+    { 'date': '2020-03-01', 'value': .039 },
+  { 'date': '2020-04-01', 'value': .141 },
+  { 'date': '2020-05-01', 'value': .123 },
+  { 'date': '2020-06-01', 'value': .101 },
+    { 'date': '2020-07-01', 'value': .092 },
+    { 'date': '2020-08-01', 'value': .074 },
+    { 'date': '2020-09-01', 'value': .070 },
+    { 'date': '2020-10-01', 'value': .060 },
+    { 'date': '2020-11-01', 'value': .059 },
+    { 'date': '2020-12-01', 'value': .060 }]
+  );
+  // unp.scrollbarX.series.push(temp);
+
+  var temp = unpCreateSeries("Black", [{ 'date': '2020-01-01', 'value': .061 },
+    { 'date': '2020-02-01', 'value': .060 },
+    { 'date': '2020-03-01', 'value': .068 },
+  { 'date': '2020-04-01', 'value': .167 },
+  { 'date': '2020-05-01', 'value': .167 },
+  { 'date': '2020-06-01', 'value': .153 },
+  { 'date': '2020-07-01', 'value': .144 },
+  { 'date': '2020-08-01', 'value': .128 },
+  { 'date': '2020-09-01', 'value': .120 },
+  { 'date': '2020-10-01', 'value': .108 },
+  { 'date': '2020-11-01', 'value': .103 },
+    { 'date': '2020-12-01', 'value': .099 }]);
+  // unp.scrollbarX.series.push(temp);
+
+  var temp = unpCreateSeries("Latinx", [{ 'date': '2020-01-01', 'value': .043 },
+    { 'date': '2020-02-01', 'value': .044 },
+    { 'date': '2020-03-01', 'value': .060 },
+  { 'date': '2020-04-01', 'value': .189 },
+  { 'date': '2020-05-01', 'value': .176 },
+  { 'date': '2020-06-01', 'value': .145 },
+  { 'date': '2020-07-01', 'value': .127 },
+  { 'date': '2020-08-01', 'value': .105 },
+  { 'date': '2020-09-01', 'value': .103 },
+    { 'date': '2020-10-01', 'value': .088 },
+    { 'date': '2020-11-01', 'value': .084 },
+    { 'date': '2020-12-01', 'value': .093 }]
+  );
+  // unp.scrollbarX.series.push(temp);
+
+  var temp = unpCreateSeries("Asian", [{ 'date': '2020-01-01', 'value': .031 },
+    { 'date': '2020-02-01', 'value': .024 },
+    { 'date': '2020-03-01', 'value': .041 },
+    { 'date': '2020-04-01', 'value': .145 },
+  { 'date': '2020-05-01', 'value': .149 },
+  { 'date': '2020-06-01', 'value': .139 },
+  { 'date': '2020-07-01', 'value': .119 },
+  { 'date': '2020-08-01', 'value': .106 },
+    { 'date': '2020-09-01', 'value': .088 },
+    { 'date': '2020-10-01', 'value': .076 },
+    { 'date': '2020-11-01', 'value': .067 },
+    { 'date': '2020-12-01', 'value': .059 }]
+
+  );
+  // unp.scrollbarX.series.push(temp);
+
+  function unpCreateSeries(name, data) {
+    var series = unp.series.push(new am4charts.LineSeries());
+    series.dataFields.valueY = "value";
+    series.dataFields.dateX = "date";
+    series.tooltipText = "{name}: {valueY}"
+    series.strokeWidth = 2;
+    series.minBulletDistance = 15;
+    series.calculatePercent = false;
+
+    // Drop-shaped tooltips
+    series.tooltip.background.cornerRadius = 20;
+    series.tooltip.background.strokeOpacity = 0;
+    series.tooltip.pointerOrientation = "vertical";
+    series.tooltip.label.minWidth = 40;
+    series.tooltip.label.minHeight = 40;
+    series.tooltip.label.textAlign = "middle";
+    series.tooltip.label.textValign = "middle";
+
+    series.name = name;
+
+    var segment = series.segments.template;
+    segment.interactionsEnabled = true;
+
+    var hoverState = segment.states.create("hover");
+    hoverState.properties.strokeWidth = 3;
+
+    var dimmed = segment.states.create("dimmed");
+    dimmed.properties.stroke = am4core.color("#dadada");
+
+    segment.events.on("over", function (event) {
+      unpProcessOver(event.target.parent.parent.parent.parent.name);
+    });
+
+    segment.events.on("out", function (event) {
+      unpProcessOut(event.target.parent.parent.parent.parent.name);
+    });
+
+    series.data = data;
+
+    // Make bullets grow on hover
+    var bullet = series.bullets.push(new am4charts.CircleBullet());
+    bullet.circle.strokeWidth = 2;
+    bullet.circle.radius = 4;
+    bullet.circle.fill = am4core.color("#fff");
+
+    var bullethover = bullet.states.create("hover");
+    bullethover.properties.scale = 1.3;
+    return series;
+  }
+
+  function unpProcessOver(hoveredSeriesName) {
+    unp.series.each(function (series) {
+      if (series.name != hoveredSeriesName) {
+        series.segments.each(function (segment) {
+          segment.setState("dimmed");
+        })
+        series.bulletsContainer.setState("dimmed");
+      } else {
+        series.toFront();
+
+        series.segments.each(function (segment) {
+          segment.setState("hover");
+        })
+      }
+    });
+  }
+
+  function unpProcessOut(hoveredSeries) {
+    unp.series.each(function (series) {
+      series.segments.each(function (segment) {
+        segment.setState("default");
+      })
+      series.bulletsContainer.setState("default");
+    });
+  }
+
+unp.scrollbarX = scrollBar;
+
+  // Make a panning cursor
+  unp.cursor = new am4charts.XYCursor();
+  unp.cursor.behavior = "panXY";
+  unp.cursor.xAxis = dateAxis;
 am4core.useTheme(am4themes_animated);
 // Themes end
 
