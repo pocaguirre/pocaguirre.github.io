@@ -7,12 +7,15 @@
     <meta charset="UTF-8">
     <title>Carlos Aguirre</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 
     <link rel="stylesheet" href="/static/css/main.css">
+
+    <bibtex src="/static/test.bib"></bibtex>
 </head>
 <body>
 <nav class="navbar navbar-dark fixed-top navbar-expand-md" style="background-color: rgba(94,30,196,0.94)">
@@ -127,91 +130,56 @@
             </div>
             <div class="tab-pane fade" id="pills-publications" role="tabpanel" aria-labelledby="pills-publications-tab">
                 <h2>Publications | <a href="https://scholar.google.com/citations?user=m_HSYp4AAAAJ&hl=en">Scholar Profile</a></h2>
-                <div id="publications">
-                    <div class="year">
-                        <h4 style="text-align:right;">2019</h4>
-                        <hr>
-                        <div class="pub">
-                            <div class="row">
-                                <div class="col-11">
-                                    <h6 class="title"><a href="/static/pubs/1912.07747.pdf">Pipelines for Procedural Information Extraction from Scientific Literature: Towards Recipes using Machine Learning and Data Science</a></h6>
-                                    <div class="authors">Huichen Yang, Carlos A Aguirre, F Maria, Derek Christensen, Luis Bobadilla, Emily Davich, Jordan Roth, Lei Luo, Yihong Theis, Alice Lam and others</div>
-                                    <div class="venue"><small><em>2019 International Conference on Document Analysis and Recognition Workshops (ICDARW)</em></small></div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="code-link align-right"><a class="float-right" href="/static/pubs/1912.07747.pdf">[pdf]</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pub">
-                            <div class="row">
-                                <div class="col-11">
-                                    <h6 class="title"><a href="/static/pubs/3341161.3344379.pdf">A novel Approach for Detection and Ranking of Trendy and Emerging Cyber Threat Events in Twitter Streams</a></h6>
-                                    <div class="authors">Avishek Bose, Vahid Behzadan, Carlos Aguirre and William H Hsu</div>
-                                    <div class="venue"><small><em>Proceedings of the 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining</em></small></div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="code-link align-right"><a class="float-right" href="/static/pubs/3341161.3344379.pdf">[pdf]</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="year">
-                        <h4 style="text-align:right;">2018</h4>
-                        <hr>
-                        <div class="pub">
-                            <div class="row">
-                                <div class="col-11">
-                                    <h6 class="title"><a href="/static/pubs/behzadan2018corpus.pdf">Corpus and Deep Learning Classifier for Collection of Cyber Threat Indicators in Twitter Stream</a></h6>
-                                    <div class="authors">Vahid Behzadan, Carlos Aguirre, Avishek Bose and William Hsu</div>
-                                    <div class="venue"><small><em>2018 IEEE International Conference on Big Data (Big Data)</em></small></div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="code-link align-right"><a class="float-right" href="/static/pubs/behzadan2018corpus.pdf">[pdf]</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pub">
-                            <div class="row">
-                                <div class="col-11">
-                                    <h6 class="title"><a href="/static/pubs/aguirre2018faster.pdf">Towards Faster Annotation Interfaces for Learning to Filter in Information Extraction and Search</a></h6>
-                                    <div class="authors">Carlos A Aguirre, Shelby Coen, F Maria, William H Hsu and Margaret Rys</div>
-                                    <div class="venue"><small><em>CEUR Workshop Proceedings</em></small></div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="code-link align-right"><a class="float-right" href="/static/pubs/aguirre2018faster.pdf">[pdf]</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pub">
-                            <div class="row">
-                                <div class="col-11">
-                                    <h6 class="title"><a href="/static/pubs/delatorre2018matesc.pdf">MATESC: Metadata-Analytic Text Extractor and Section Classifier for scientific publications</a></h6>
-                                    <div class="authors">Maria F De La Torre, Carlos A Aguirre, Bre Ann M Anshutz and William H Hsu</div>
-                                    <div class="venue"><small><em>IC3K 2018-Proceedings of the 10th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management</em></small></div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="code-link align-right"><a class="float-right" href="/static/pubs/delatorre2018matesc.pdf">[pdf]</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="year">
-                        <h4 style="text-align:right;">2017</h4>
-                        <hr>
-                        <div class="pub">
-                            <div class="row">
-                                <div class="col-11">
-                                    <h6 class="title"><a href="/static/pubs/aguirre2017learning.pdf">Learning to Filter Documents for Information Extraction using Rapid Annotation</a></h6>
-                                    <div class="authors">Carlos A Aguirre, Sneha Gullapalli, F Maria, Alice Lam, Joshua Levi Weese and William H Hsu</div>
-                                    <div class="venue"><small><em>2017 International Conference on Machine Learning and Data Science (MLDS)</em></small></div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="code-link align-right"><a class="float-right" href="/static/pubs/aguirre2017learning.pdf">[pdf]</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bibtex_structure">
+                  <div class="group year" extra="DESC number">
+                      <h4 class="title"></h4>
+                      <div style="padding-bottom:10px;"></div>
+                      <div class="sort journal" extra="DESC string">
+                        <div class="templates"></div>
+                      </div>
+                  </div>
+                </div>
+
+                <div id="bibtex_display">
+
+                  <div class="bibtex_template" style="display: none;">
+                    <ul> <li>
+                      <span class="if title">
+                          <span class="if url">
+                              <a class="url"><span style="text-decoration: underline;" class="title"></span></a>
+                          </span>
+                          <span class="if !url">
+                                <a class="bibtexVar" href="/static/pubs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+                                    <span style="text-decoration: underline;" class="title"></span>
+                                </a>
+                          </span>
+                      </span>
+                      <div class="if author">
+                        <span class="author"></span>
+                      </div>
+                      <div>
+                        <span class="if journal"><em><span class="journal"></span></em>,</span>
+                        <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+                        <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+                        <span class="if address"><span class="address"></span>,</span>
+                        <span class="if month"><span class="month"></span>,</span>
+                        <span class="if year"><span class="year"></span>.</span>
+                        <span class="if note"><span class="note"></span></span>
+                      </div>
+                        <a class="bibtexVar" role="button" data-toggle="collapse"
+                           href="#bib+BIBTEXKEY+" aria-expanded="false"
+                           aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
+                          [bib]
+                        </a>
+                      <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                          <div class="well">
+                            <pre><span class="bibtexraw noread"></span></pre>
+                          </div>
+                      </div>
+                      <div style="display:none"><span class="bibtextype"></span></div>
+                    </li></ul>
+                  </div>
+
                 </div>
             </div>
         </div>
