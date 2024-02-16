@@ -21,23 +21,10 @@
 <nav class="navbar navbar-dark fixed-top navbar-expand-md" style="background-color: rgba(94,30,196,0.94)">
     <div class="container">
         <!-- Navbar content -->
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand text-center" href="/">
         <img src="/static/images/newCAcircle.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Carlos Aguirre
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto nav" id="pills-tab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-home" aria-selected="true">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-publications" role="tab" aria-controls="pills-profile" aria-selected="false">Publications</a>
-              </li>
-            </ul>
-        </div>
     </div>
 </nav>
 <div class="container">
@@ -78,11 +65,65 @@
             <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
                     <h2>About Me</h2>
                     <p>I am a PhD student at Johns Hopkins University since fall 2019.
-                        I am affiliated with the <a href="https://www.clsp.jhu.edu/">Center for Language and Speech Processing</a> and I am advised by professor <a href="https://www.cs.jhu.edu/~mdredze/">Mark Dredze</a>.
+                        I am affiliated with the <a href="https://www.clsp.jhu.edu/">Center for Language and Speech Processing</a> and advised by professor <a href="https://www.cs.jhu.edu/~mdredze/">Mark Dredze</a>.
                     </p>
                     <p class="lead">
                         My research focuses on measuring social biases and ensuring fairness of language models. In the past, I have primarily focused on application areas such as healthcare, and have answered questions regarding ensuring fairness under missing demographic attributes and measuring fairness in decision making of LLMs. Other interests include: human-AI interactions, AI for social good, fairness and trustworthy-AI, and other applications of NLP, e.g. language generation and dialog systems.
                     </p>
+                    <br>
+                    <br>
+                    <h2>Publications | <a href="https://scholar.google.com/citations?user=m_HSYp4AAAAJ&hl=en">Scholar Profile</a></h2>
+                <div class="bibtex_structure">
+                  <div class="group year" extra="DESC number">
+                      <h4 class="title"></h4>
+                      <div style="padding-bottom:10px;"></div>
+                      <div class="sort journal" extra="DESC string">
+                        <div class="templates"></div>
+                      </div>
+                  </div>
+                </div>
+
+                <div id="bibtex_display">
+
+                  <div class="bibtex_template" style="display: none;">
+                    <ul> <li>
+                      <span class="if title">
+                          <span class="if url">
+                              <a class="url"><span style="text-decoration: underline;" class="title"></span></a>
+                          </span>
+                          <span class="if !url">
+                                <a class="bibtexVar" href="/static/pubs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+                                    <span style="text-decoration: underline;" class="title"></span>
+                                </a>
+                          </span>
+                      </span>
+                      <div class="if author">
+                        <span class="author"></span>
+                      </div>
+                      <div>
+                        <span class="if journal"><em><span class="journal"></span></em>,</span>
+                        <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+                        <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+                        <span class="if address"><span class="address"></span>,</span>
+                        <span class="if month"><span class="month"></span>,</span>
+                        <span class="if year"><span class="year"></span>.</span>
+                        <span class="if note"><span class="note"></span></span>
+                      </div>
+                        <a class="bibtexVar" role="button" data-toggle="collapse"
+                           href="#bib+BIBTEXKEY+" aria-expanded="false"
+                           aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
+                          [bib]
+                        </a>
+                      <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                          <div class="well">
+                            <pre><span class="bibtexraw noread"></span></pre>
+                          </div>
+                      </div>
+                      <div style="display:none"><span class="bibtextype"></span></div>
+                    </li></ul>
+                  </div>
+
+                </div>
                     <div class="row">
                         <div class="card col-12">
                             <div class="card-body">
@@ -136,58 +177,7 @@
                     </div>
             </div>
             <div class="tab-pane fade" id="pills-publications" role="tabpanel" aria-labelledby="pills-publications-tab">
-                <h2>Publications | <a href="https://scholar.google.com/citations?user=m_HSYp4AAAAJ&hl=en">Scholar Profile</a></h2>
-                <div class="bibtex_structure">
-                  <div class="group year" extra="DESC number">
-                      <h4 class="title"></h4>
-                      <div style="padding-bottom:10px;"></div>
-                      <div class="sort journal" extra="DESC string">
-                        <div class="templates"></div>
-                      </div>
-                  </div>
-                </div>
-
-                <div id="bibtex_display">
-
-                  <div class="bibtex_template" style="display: none;">
-                    <ul> <li>
-                      <span class="if title">
-                          <span class="if url">
-                              <a class="url"><span style="text-decoration: underline;" class="title"></span></a>
-                          </span>
-                          <span class="if !url">
-                                <a class="bibtexVar" href="/static/pubs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
-                                    <span style="text-decoration: underline;" class="title"></span>
-                                </a>
-                          </span>
-                      </span>
-                      <div class="if author">
-                        <span class="author"></span>
-                      </div>
-                      <div>
-                        <span class="if journal"><em><span class="journal"></span></em>,</span>
-                        <span class="if publisher"><em><span class="publisher"></span></em>,</span>
-                        <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
-                        <span class="if address"><span class="address"></span>,</span>
-                        <span class="if month"><span class="month"></span>,</span>
-                        <span class="if year"><span class="year"></span>.</span>
-                        <span class="if note"><span class="note"></span></span>
-                      </div>
-                        <a class="bibtexVar" role="button" data-toggle="collapse"
-                           href="#bib+BIBTEXKEY+" aria-expanded="false"
-                           aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
-                          [bib]
-                        </a>
-                      <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
-                          <div class="well">
-                            <pre><span class="bibtexraw noread"></span></pre>
-                          </div>
-                      </div>
-                      <div style="display:none"><span class="bibtextype"></span></div>
-                    </li></ul>
-                  </div>
-
-                </div>
+                
             </div>
         </div>
     </div>
